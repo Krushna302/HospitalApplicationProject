@@ -92,9 +92,15 @@ public class LoginController {
 		
 		ResponseDto responseDto = loginServiceInter.forgotPassword(email, password);
 		
+		if(responseDto !=null) {
+	
 		return new ResponseEntity<ResponseDto>(responseDto, HttpStatus.OK);
 		
-		
+		}
+		else {
+			
+			return new ResponseEntity<ResponseDto>(responseDto, HttpStatus.NOT_FOUND);			
+		}
 		
 	}
 	

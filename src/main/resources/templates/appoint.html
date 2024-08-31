@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>appointment pdf</title>
+</head>
+<body>
+
+  <table>
+    <tr>
+        <th>Customer</th>
+    </tr>
+    <tr>
+        <td th:text="'Company Name: ' + ${Appointmentnumber}"></td>
+    </tr>
+    <tr>
+        <td th:text="'Contact Name: ' + ${appointmentdate}"></td>
+    </tr>
+
+</table>
+</body>
+</html>
